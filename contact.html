@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>联系我们 - 北华大学1208实验室</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>北华大学 <span class="gradient-text">1208实验室</span></h1>
+          <p>研究 · 探索 · 共创 · 影响未来</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a data-nav href="index.html">首页</a>
+        <a data-nav href="research.html">研究方向</a>
+        <a data-nav href="updates.html">动态公告</a>
+        <a data-nav href="team.html">团队成员</a>
+        <a data-nav href="achievements.html">成果展示</a>
+        <a data-nav href="contact.html">联系我们</a>
+      </nav>
+
+      <div class="top-actions">
+        <div class="pill"><span class="dot"></span><span style="font-size:12.8px;">开放交流 · 欢迎合作</span></div>
+        <button class="icon-btn" id="themeBtn"><span id="themeIcon">🌙</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="tag"><strong>联系我们</strong></span>
+          <span class="tag">合作 · 申请 · 咨询（示例）</span>
+        </div>
+        <h2 class="hero-title">把想法发给我们</h2>
+        <p class="hero-sub">这是前端演示表单：提交后弹窗提示，不会真正发送。</p>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="grid-2">
+        <div class="panel">
+          <div class="section-head" style="margin-bottom:10px;">
+            <h2>信息提交</h2>
+            <p>写得越具体，回复越高效。</p>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="field">
+              <label for="name">姓名 / 团队</label>
+              <input class="input" id="name" name="name" placeholder="例如：张三 / 某某团队" required/>
+            </div>
+            <div class="field">
+              <label for="email">联系方式</label>
+              <input class="input" id="email" name="email" type="email" placeholder="邮箱或手机号" required/>
+            </div>
+            <div class="field">
+              <label for="topic">主题</label>
+              <input class="input" id="topic" name="topic" placeholder="课题合作 / 申请加入 / 学术交流..." required/>
+            </div>
+            <div class="field">
+              <label for="msg">内容</label>
+              <textarea id="msg" name="msg" placeholder="简要说明你的需求、背景、时间安排等（越具体越好）" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="justify-content:center;">
+              <span aria-hidden="true">✉️</span> 提交申请
+            </button>
+
+            <p class="helper">
+              说明：当前为纯前端演示，不会真正发到服务器。后续可对接后端接口。
+            </p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <div class="section-head" style="margin-bottom:10px;">
+            <h2>实验室信息</h2>
+            <p>把地址/邮箱替换成你们真实信息即可。</p>
+          </div>
+
+          <div class="list">
+            <div class="list-item" style="cursor:default;">
+              <div class="li-left">
+                <div class="title">地址</div>
+                <div class="meta">北华大学 工科楼 A-1208（示例）</div>
+              </div>
+              <div class="badge info">LOCATION</div>
+            </div>
+            <div class="list-item" style="cursor:default;">
+              <div class="li-left">
+                <div class="title">邮箱</div>
+                <div class="meta">1208lab@beihua.edu.cn（示例）</div>
+              </div>
+              <div class="badge new">MAIL</div>
+            </div>
+            <div class="list-item" style="cursor:default;">
+              <div class="li-left">
+                <div class="title">办公时间</div>
+                <div class="meta">周一至周五 09:00-17:00（示例）</div>
+              </div>
+              <div class="badge hot">TIME</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px; display:grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <button class="btn" id="copyEmailBtn" data-email="1208lab@beihua.edu.cn" style="justify-content:center;">
+              📋 复制邮箱
+            </button>
+            <a class="btn btn-primary" href="updates.html" style="justify-content:center;">查看动态</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 北华大学1208实验室（示例）</div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="chip" href="index.html">回到首页</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="t">
+          <div class="logo" style="width:34px;height:34px;border-radius:14px;"></div>
+          <h3 id="modalTitle">弹窗标题</h3>
+        </div>
+        <button class="close" id="modalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-avatar">
+          <div class="big" id="modalAvatar">字</div>
+          <p class="mname" id="modalName">姓名</p>
+          <p class="mrole" id="modalRole">职位</p>
+          <div class="modal-tags" id="modalTags"></div>
+        </div>
+        <div class="modal-content">
+          <p id="modalBody"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

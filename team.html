@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>团队成员 - 北华大学1208实验室</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>北华大学 <span class="gradient-text">1208实验室</span></h1>
+          <p>研究 · 探索 · 共创 · 影响未来</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a data-nav href="index.html">首页</a>
+        <a data-nav href="research.html">研究方向</a>
+        <a data-nav href="updates.html">动态公告</a>
+        <a data-nav href="team.html">团队成员</a>
+        <a data-nav href="achievements.html">成果展示</a>
+        <a data-nav href="contact.html">联系我们</a>
+      </nav>
+
+      <div class="top-actions">
+        <div class="pill"><span class="dot" aria-hidden="true"></span><span style="font-size:12.8px;">开放交流 · 欢迎合作</span></div>
+        <button class="icon-btn" id="themeBtn"><span id="themeIcon">🌙</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="tag"><strong>团队成员</strong></span>
+          <span class="tag">点击查看简介</span>
+        </div>
+        <h2 class="hero-title">共同打造“可落地”的科研体系</h2>
+        <p class="hero-sub">成员卡片点击打开弹窗（示例）。把真实头像/简历/研究方向替换即可。</p>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="team-grid">
+        <div class="member" data-modal-title="蒋佳君" data-modal-role="课题负责人"
+             data-modal-avatar="蒋"
+             data-modal-body="聚焦多模态融合与可信评测体系，推动从实验到落地的闭环。"
+             data-modal-tags="融合学习,评测体系,可信"
+             tabindex="0">
+          <div class="avatar">蒋</div>
+          <h4>蒋佳君</h4>
+          <p class="role">课题负责人 · 智能融合与工程化</p>
+          <div class="skills"><span class="chip">融合学习</span><span class="chip">评测体系</span></div>
+        </div>
+
+        <div class="member" data-modal-title="徐峥" data-modal-role="研究骨干"
+             data-modal-avatar="徐"
+             data-modal-body="训练策略与实验自动化，提升模型稳定性与迭代效率。"
+             data-modal-tags="训练,优化,自动化" tabindex="0">
+          <div class="avatar">徐</div>
+          <h4>徐峥</h4>
+          <p class="role">研究骨干 · 训练与优化</p>
+          <div class="skills"><span class="chip">训练</span><span class="chip">优化</span></div>
+        </div>
+
+        <div class="member" data-modal-title="孙佳豪" data-modal-role="方向成员"
+             data-modal-avatar="孙"
+             data-modal-body="搭建可视化评测平台与数据看板，帮助团队快速定位问题并验证改进。"
+             data-modal-tags="可视化,平台,评测" tabindex="0">
+          <div class="avatar">孙</div>
+          <h4>孙佳豪</h4>
+          <p class="role">方向成员 · 可视化与评测平台</p>
+          <div class="skills"><span class="chip">可视化</span><span class="chip">平台</span></div>
+        </div>
+
+        <div class="member" data-modal-title="高铭" data-modal-role="方向成员"
+             data-modal-avatar="高"
+             data-modal-body="负责数据治理、标注规范与数据质量监控，让实验可复现、可追溯。"
+             data-modal-tags="数据治理,标注,质量监控" tabindex="0">
+          <div class="avatar">高</div>
+          <h4>高铭</h4>
+          <p class="role">方向成员 · 数据治理与标注规范</p>
+          <div class="skills"><span class="chip">数据治理</span><span class="chip">质量监控</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 北华大学1208实验室（示例）</div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="chip" href="achievements.html">查看成果</a>
+        <a class="chip" href="contact.html">联系我们</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="t">
+          <div class="logo" style="width:34px;height:34px;border-radius:14px;"></div>
+          <h3 id="modalTitle">弹窗标题</h3>
+        </div>
+        <button class="close" id="modalCloseBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-avatar">
+          <div class="big" id="modalAvatar">字</div>
+          <p class="mname" id="modalName">姓名</p>
+          <p class="mrole" id="modalRole">职位</p>
+          <div class="modal-tags" id="modalTags"></div>
+        </div>
+        <div class="modal-content">
+          <p id="modalBody"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>北华大学1208实验室</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>北华大学 <span class="gradient-text">1208实验室</span></h1>
+          <p>研究 · 探索 · 共创 · 影响未来</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="主导航">
+        <a data-nav href="index.html">首页</a>
+        <a data-nav href="research.html">研究方向</a>
+        <a data-nav href="updates.html">动态公告</a>
+        <a data-nav href="team.html">团队成员</a>
+        <a data-nav href="achievements.html">成果展示</a>
+        <a data-nav href="contact.html">联系我们</a>
+      </nav>
+
+      <div class="top-actions">
+        <div class="pill">
+          <span class="dot" aria-hidden="true"></span>
+          <span style="font-size:12.8px;">开放交流 · 欢迎合作</span>
+        </div>
+        <button class="icon-btn" id="themeBtn" aria-label="切换主题" title="切换主题">
+          <span id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero" id="home">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="tag"><strong>1208</strong> 实验室门户</span>
+          <span class="tag">产学研协同</span>
+          <span class="tag">科研与教学融合</span>
+        </div>
+
+        <h2 class="hero-title">
+          探索前沿技术，<br/>
+          用工程推动研究落地，<br/>
+          <span class="gradient-text">把成果带到现实世界</span>
+        </h2>
+
+        <p class="hero-sub">
+          这是“北华大学1208实验室”的多页面官网UI示例：包含丰富卡片、列表弹窗、主题切换、团队与公告交互。
+          你可以替换为你们真实的方向、成员、公告与成果数据。
+        </p>
+
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="contact.html">
+            <span aria-hidden="true">🤝</span> 申请加入 / 合作
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn" href="research.html">研究方向<span aria-hidden="true">↘</span></a>
+          <a class="btn" href="updates.html">最新动态<span aria-hidden="true">🗞️</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <h2>实验室看点</h2>
+        <p>用“丰富UI模块”把信息组织得更清晰、更好看。</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon" aria-hidden="true">🧠</div>
+          <h3>智能算法与多模态融合</h3>
+          <p>跨模态对齐、鲁棒学习与可解释流程构建，形成闭环研发能力。</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">🛠️</div>
+          <h3>工程化评测与自动化流程</h3>
+          <p>评测基线、实验管理、CI/CD自动化，让研究从实验走向部署。</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">🧾</div>
+          <h3>可信与可验证系统</h3>
+          <p>关注安全、偏差与可追溯性，提高系统稳定性与可信度。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="grid-2">
+        <div class="panel">
+          <div class="section-head" style="margin-bottom:10px;">
+            <h2>动态公告速览</h2>
+            <p>点击卡片打开弹窗预览（示例交互）。</p>
+          </div>
+
+          <div class="list">
+            <div class="list-item" data-modal-title="1208实验室开放日" data-modal-body="本月将举办开放交流活动，欢迎同学们了解研究方向与项目招募情况（示例文本）。"
+                 data-modal-tags="公告,开放日" data-modal-avatar="🗞️">
+              <div class="li-left">
+                <div class="title">1208实验室开放日</div>
+                <div class="meta">2026-05-01 · 线上+线下 · 预计 60 人</div>
+              </div>
+              <div class="badge hot">HOT</div>
+            </div>
+
+            <div class="list-item" data-modal-title="课题申报：智能评测平台" data-modal-body="拟招募 2-3 名同学参与平台评测体系搭建：指标设计、可视化与自动化脚本（示例文本）。"
+                 data-modal-tags="课题,招募" data-modal-avatar="🧩">
+              <div class="li-left">
+                <div class="title">课题申报：智能评测平台</div>
+                <div class="meta">2026-04-20 · 进展：系统框架完成</div>
+              </div>
+              <div class="badge new">NEW</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="section-head" style="margin-bottom:10px;">
+            <h2>快速通道</h2>
+            <p>让用户更容易找到关键信息。</p>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <a class="btn" href="research.html" style="justify-content:center;">研究方向<span aria-hidden="true">🧩</span></a>
+            <a class="btn" href="team.html" style="justify-content:center;">团队成员<span aria-hidden="true">👥</span></a>
+            <a class="btn" href="achievements.html" style="justify-content:center;">成果展示<span aria-hidden="true">🏆</span></a>
+            <a class="btn btn-primary" href="contact.html" style="justify-content:center;">联系我们<span aria-hidden="true">✉️</span></a>
+          </div>
+
+          <p class="helper" style="margin-top:12px;">
+            小提示：你可以把这里替换成“数据看板/论文下载/项目招募”等更丰富内容。
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 北华大学1208实验室 · All Rights Reserved（示例）</div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="chip" href="index.html">网站首页</a>
+        <a class="chip" href="contact.html">联系表单</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="t">
+          <div class="logo" style="width:34px;height:34px;border-radius:14px;"></div>
+          <h3 id="modalTitle">弹窗标题</h3>
+        </div>
+        <button class="close" id="modalCloseBtn" aria-label="关闭弹窗">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-avatar">
+          <div class="big" id="modalAvatar">字</div>
+          <p class="mname" id="modalName">姓名</p>
+          <p class="mrole" id="modalRole">职位</p>
+          <div class="modal-tags" id="modalTags"></div>
+        </div>
+        <div class="modal-content">
+          <p id="modalBody"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
